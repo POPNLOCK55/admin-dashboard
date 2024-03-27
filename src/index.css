@@ -5,11 +5,13 @@ html,
 body,
 #root,
 .app,
-content {
+.content {
   height: 100%;
   width: 100%;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: "Source Sans 3", sans-serif;
 }
+
+
 
 .app {
   display: flex;
