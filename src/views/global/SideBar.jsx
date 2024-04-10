@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
@@ -59,7 +59,7 @@ const SideBar = () => {
             },
         }}
         >
-            <ProSidebar collapsed={isCollapsed}>
+            <Sidebar collapsed={isCollapsed}>
                 <Menu iconShape="square">
             {/* LOGO AND MENU ICON */}
                     <MenuItem
@@ -98,7 +98,7 @@ const SideBar = () => {
                                 alt="Profile User"
                                 width={"100px"}
                                 height={"100px"}
-                                src="../../../public/assets/Matt-2.jpg"
+                                src={`../../assets/user.png`}
                                 style={{ cursor: "pointer", borderRadius: "50%" }}
                                 />
                             </Box>
@@ -110,7 +110,7 @@ const SideBar = () => {
                             fontWeight={"bold"}
                             sx={{ m: "10px 0 0 0 " }}
                         >
-                                Ed Roh
+                                Matthew Porter
                             </Typography>
                             <Typography variant="h5" color={colors.greenAccent[500]}>
                                 Fancy Admin Guy
@@ -200,7 +200,7 @@ const SideBar = () => {
                             />
                         </Box>
                 </Menu>
-            </ProSidebar>
+            </Sidebar>
         </Box>
     );
     };
