@@ -62,7 +62,8 @@ const SideBar = () => {
             <ProSidebar collapsed={isCollapsed}>
                 <Menu iconShape="square">
             {/* LOGO AND MENU ICON */}
-                    <MenuItem
+            {/* 66 through 73 is dictating what is rendered when the sidebar IS collapsed. 74 to 89 is dictating what's rendered when the sidebar is NOT collapsed. */}
+                    <MenuItem 
                     onClick={() => setIsCollapsed(!isCollapsed)}
                     icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
                     style={{
@@ -127,6 +128,14 @@ const SideBar = () => {
                             selected={selected}
                             setSelected={setSelected}
                             />
+
+                            <Typography
+                            variant="h6"
+                            color={colors.grey[300]}
+                            sx={{ m: "15px 0 5px 20px"}}
+                            >
+                                Data
+                            </Typography>
                             <Item
                             title="Manage Team"
                             to="/team"
@@ -148,6 +157,13 @@ const SideBar = () => {
                             selected={selected}
                             setSelected={setSelected}
                 />
+                            <Typography
+                            variant="h6"
+                            color={colors.grey[300]}
+                            sx={{ m: "15px 0 5px 20px"}}
+                            >
+                                Pages
+                            </Typography>
                             <Item
                             title="Profile Form"
                             to="/form"
@@ -169,6 +185,13 @@ const SideBar = () => {
                             selected={selected}
                             setSelected={setSelected}
                             />
+                            <Typography
+                            variant="h6"
+                            color={colors.grey[300]}
+                            sx={{ m: "15px 0 5px 20px"}}
+                            >
+                                Charts
+                            </Typography>
                             <Item
                             title="Bar Chart"
                             to="/bar"
