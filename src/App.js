@@ -9,12 +9,12 @@ import Team from "./views/team";
 import Invoices from "./views/invoices";
 import Contacts from "./views/contacts";
 // import Bar from "./views/Bar";
-import Form from "./views/Form";
+import Form from "./views/form";
 // import Line from "./views/line";
 // import Pie from "./views/pie";
-// import FAQ from "./views/faq";
+import FAQ from "./views/faq";
 // import Geography from "./views/geography";
-// import Calendar from "./views/calendar";
+import Calendar from "./views/calendar";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -36,9 +36,9 @@ function App() {
               <Route path="/form" element= {<Form />} />
               {/* <Route path="/line" element= {<Line />} /> */}
               {/* <Route path="/pie" element= {<Pie />} /> */}
-              {/* <Route path="/faq" element= {<FAQ />} /> */}
+              <Route path="/faq" element= {<FAQ />} />
               {/* <Route path="/geography" element= {<Geography />} /> */}
-              {/* <Route path="/calendar" element= {<Calendar />} /> */}
+              <Route path="/calendar" element= {<Calendar />} />
             </Routes>
           </main>
         </div>
