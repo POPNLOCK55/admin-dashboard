@@ -9,7 +9,7 @@ import Team from "./views/team";
 import Invoices from "./views/invoices";
 import Contacts from "./views/contacts";
 // import Bar from "./views/Bar";
-// import Form from "./views/form";
+import Form from "./views/Form";
 // import Line from "./views/line";
 // import Pie from "./views/pie";
 // import FAQ from "./views/faq";
@@ -33,7 +33,7 @@ function App() {
               <Route path="/invoices" element= {<Invoices />} />
               <Route path="/contacts" element= {<Contacts />} />
               {/* <Route path="/bar" element= {<Bar />} /> */}
-              {/* <Route path="/form" element= {<Form />} /> */}
+              <Route path="/form" element= {<Form />} />
               {/* <Route path="/line" element= {<Line />} /> */}
               {/* <Route path="/pie" element= {<Pie />} /> */}
               {/* <Route path="/faq" element= {<FAQ />} /> */}
