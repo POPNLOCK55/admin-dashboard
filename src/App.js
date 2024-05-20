@@ -12,9 +12,9 @@ import Calendar from "./views/calendar";
 import Form from "./views/form";
 import FAQ from "./views/faq";
 import Bar from "./views/bar";
-// import Line from "./views/line";
+import Line from "./views/line";
 import Pie from "./views/pie";
-// import Geography from "./views/geography";
+import Geography from "./views/geography";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -34,10 +34,10 @@ function App() {
               <Route path="/contacts" element= {<Contacts />} />
               <Route path="/bar" element= {<Bar />} />
               <Route path="/form" element= {<Form />} />
-              {/* <Route path="/line" element= {<Line />} /> */}
+              <Route path="/line" element= {<Line />} />
               <Route path="/pie" element= {<Pie />} />
               <Route path="/faq" element= {<FAQ />} />
-              {/* <Route path="/geography" element= {<Geography />} /> */}
+              <Route path="/geography" element= {<Geography />} />
               <Route path="/calendar" element= {<Calendar />} />
             </Routes>
           </main>
